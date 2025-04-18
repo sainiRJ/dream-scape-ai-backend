@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    @page {
+      margin: 80px 50px 80px 50px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .content {
+      padding: 10px 30px 10px 40px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #999;
+      padding: 8px;
+    }
+    table th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <img src="banner.png" class="banner" alt="Banner" />
+  <div class="content">
+    <h1>Practitioner Case Report for {{name}}</h1>
+    <p class="subtitle">Prepared by DreamScape AI</p>
+    {{{practitionerReport}}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    @page {
+      margin: 80px 50px 80px 50px;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .content {
+      padding: 10px 30px 10px 40px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    .intro {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #999;
+      padding: 8px;
+    }
+    table th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <img src="banner.png" class="banner" alt="Banner" />
+  <div class="content">
+    <h1>Client Assessment Report for {{name}}</h1>
+    <div class="subtitle">Prepared by DreamScape AI</div>
+    <div class="intro">
+      {{name}}, what you’re about to read isn’t just a reflection—it’s a revelation.
+      This assessment draws on evidence-based psychological frameworks and cutting-edge insight tools to
+      uncover the hidden architecture of your mindset, motivations, and identity with stunning clarity.
+    </div>
+    <div class="section">
+      {{{clientReport}}}
+    </div>
+  </div>
+</body>
+</html>
